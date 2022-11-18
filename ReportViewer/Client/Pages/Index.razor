@@ -1,0 +1,11 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>RDCL Reports in Blazor Web Assembly</h1>
+
+<a id="btnGenerate" class="btn btn-success" href="https://localhost:44372/api/Report/GetReport?reportType=1" target="_blank">HTML</a>
+<a id="btnGenerateExcel" class="btn btn-success" href="https://localhost:44372/api/Report/GetReport?reportType=2" target="_blank">Excel</a>
+<a id="btnGenerate" class="btn btn-success" href="https://localhost:44372/api/Report/GetReport?reportType=3" target="_blank">PDF</a>
+<a id="btnGenerateWord" class="btn btn-success" href="https://localhost:44372/api/Report/GetReport?reportType=4" target="_blank">Word</a>
+<text>@((MarkupString)content)</text>
